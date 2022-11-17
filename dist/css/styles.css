@@ -422,6 +422,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 .header::after {
   content: "";
@@ -441,6 +442,7 @@ body {
   height: 100px;
   padding: 1rem;
   z-index: 10;
+  width: 100%;
 }
 
 .logo {
@@ -449,6 +451,7 @@ body {
 }
 
 .menu-icon {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
