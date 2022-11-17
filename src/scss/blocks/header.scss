@@ -1,1 +1,29 @@
+@use '../functions/image.scss' as *;
+@use '../mixins/pseudo.scss' as *;
 
+.header {
+  position: relative;
+  background-image: image('bg-header-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  &::after {
+    @include pseudo(100%, 100%) {
+      top: 0;
+      left: 0;
+      opacity: 0.6;
+      background-color: rgb(0 0 0 / 0.5);
+    }
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 1rem;
+    z-index: 10;
+  }
+}

@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
-      rel="stylesheet"
+    <!-- <link
+      rel="preload"
+      href="assets/fonts/impactreg.woff"
+      as="font"
+      crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      href="assets/fonts/spray-letters.woff2"
+      as="font"
+      crossorigin="anonymous"
+    /> -->
     <!-- CAMBIAR POR styles.min.css al finalizar el proyecto -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
@@ -17,15 +23,66 @@
 
   <body>
     <header class="header">
+      <div class="header__top">
+        <img class="logo" src="assets/images/logo.svg" alt="logo" />
+        <div id="menu-icon" class="menu-icon">
+          <img src="assets/images/icon-hamburger-1.svg" alt="" />
+          <img src="assets/images/icon-hamburger-2.svg" alt="" />
+          <img src="assets/images/icon-hamburger-3.svg" alt="" />
+        </div>
+      </div>
+      <h1 class="main-title">
+        <span class="main-title__break">Elvvira</span> Castellanos
+      </h1>
+      <h2 class="main-subtitle main-subtitle--first">
+        <span class="main-subtitle__break">Creative</span> Developer
+      </h2>
+      <h2 class="main-subtitle main-subtitle--second">
+        <span class="main-subtitle__break">Graphic</span> Designer
+      </h2>
+      <div id="menu-close" class="menu-close">
+        <img src="assets/images/icon-close.svg" alt="" />
+      </div>
       <nav>
-        <ul class="menu">
+        <ul id="menu" class="menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">Item de ejemplo</a>
+            <a href="#" class="menu__link">ME</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">ABOUT</a>
+          </li>
+          <li id="menu-works" class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">WORKS</a>
+            <img src="assets/images/arrow.png" alt="" />
+            <ul id="submenu" class="submenu">
+              <img
+                id="submenu-back"
+                class="submenu-back"
+                src="assets/images/arrow.png"
+                alt=""
+              />
+              <li class="menu__item">
+                <a href="#" class="menu__link">ME</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">ME</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">ME</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">ME</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">CONTACT</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main"></main>
     <footer class="footer"></footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -1,8 +1,12 @@
 @use 'base/normalize.scss';
 @use 'base/initial-reset.scss';
+@use 'config/variables.scss';
+@use 'config/fonts.scss';
 @use 'blocks/body.scss';
 @use 'blocks/titles.scss';
 @use 'blocks/texts.scss';
 @use 'blocks/buttons.scss';
 @use 'blocks/header.scss';
+@use 'blocks/logo.scss';
+@use 'blocks/menu.scss';
 @use 'blocks/footer.scss';
